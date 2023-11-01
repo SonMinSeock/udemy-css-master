@@ -16,6 +16,7 @@ body {
 
 .flex-container {
   background: white;
+  height: 100vh;
   padding: 10px;
   border: 5px solid black;
   display: flex;
@@ -23,8 +24,9 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   /* flex-flow: row wrap; */
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  align-content: center;
 }
 
 .item-1 {
