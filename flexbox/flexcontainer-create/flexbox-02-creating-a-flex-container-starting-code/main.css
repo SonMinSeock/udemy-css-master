@@ -20,7 +20,7 @@ body {
   border: 5px solid black;
   display: flex;
   /* display: inline-flex; */
-  flex-direction: column;
+  flex-direction: column-reverse;
   flex-wrap: wrap;
 }
 
