@@ -20,8 +20,11 @@ body {
   border: 5px solid black;
   display: flex;
   /* display: inline-flex; */
-  flex-direction: column-reverse;
+  flex-direction: row;
   flex-wrap: wrap;
+  /* flex-flow: row wrap; */
+  justify-content: center;
+  align-items: center;
 }
 
 .item-1 {
