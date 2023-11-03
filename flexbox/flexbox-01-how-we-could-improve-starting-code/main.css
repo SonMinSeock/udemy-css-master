@@ -1,7 +1,6 @@
 #product-overview {
   background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent),
-    url("images/freedom.jpg") center/cover no-repeat border-box,
-    #ff1b68;
+    url("images/freedom.jpg") center/cover no-repeat border-box, #ff1b68;
   /* background-image: url("freedom.jpg");
     background-size: cover;
     background-position: left 10% bottom 20%; */
@@ -90,20 +89,26 @@
 
 @media (min-width: 40rem) {
   .plan__list {
-    width: 100%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .plan {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     width: 30%;
-    vertical-align: middle;
+    height: 28rem;
     min-width: 13rem;
     max-width: 25rem;
   }
 
   .plan--highlighted {
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    height: 30rem;
+    z-index: 50;
   }
 }
 
@@ -122,7 +127,6 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  text-align: center;
 }
 
 .key-feature__image {
@@ -144,10 +148,12 @@
 
 @media (min-width: 40rem) {
   .key-feature {
-    display: inline-block;
     width: 30%;
     max-width: 25rem;
-    vertical-align: top;
+  }
+  .key-feature__list {
+    display: flex;
+    justify-content: center;
   }
 }
 
