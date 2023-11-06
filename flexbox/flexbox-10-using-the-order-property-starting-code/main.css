@@ -43,7 +43,7 @@ body {
   margin: 10px;
   width: 250px;
   font-size: 1.8rem;
-  align-self: flex-end;
+  /* align-self: flex-end; */
 }
 
 .item-3 {
@@ -73,6 +73,7 @@ body {
   border: 5px solid black;
   margin: 10px;
   width: 350px;
+  flex-grow: 1;
 }
 
 .item-6 {
@@ -83,4 +84,5 @@ body {
   margin: 10px;
   width: 350px;
   /* order: -2; */
+  flex-grow: 4;
 }
