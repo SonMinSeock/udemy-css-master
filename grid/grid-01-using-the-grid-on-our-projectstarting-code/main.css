@@ -3,7 +3,7 @@
   display: grid;
   height: 500px;
   grid-template-columns: repeat(4, 20%);
-  grid-template-rows: 5rem minmax(10px, auto) 100px;
+  grid-template-rows: [row-1-start] 5rem [row-2-start row-1-end] minmax(10px, auto) [row-3-start row-2-end] 100px;
 
   /*‘element-sizing(요소 크기)’ 프로퍼티 및 ‘repeat(반복)’ 함수와 ‘minmax(최대최소)’ 함수 사용하기 실습 코드*/
 
@@ -48,8 +48,8 @@
   background: rgba(255, 0, 0, 0.5);
   grid-column-start: 1;
   grid-column-end: -1;
-  grid-row-start: 2;
-  grid-row-end: span 1;
+  grid-row-start: row-2-start;
+  grid-row-end: row-2-end;
   z-index: 20;
 }
 
@@ -58,8 +58,8 @@
   grid-column-start: 2;
   /* grid-column-end: 5; */
   grid-column-end: span 3;
-  grid-row-start: 1;
-  grid-row-end: 3;
+  grid-row-start: row-1-start;
+  grid-row-end: row-2-end;
 }
 
 .el4 {
