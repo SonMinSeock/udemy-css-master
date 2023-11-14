@@ -1,8 +1,40 @@
 .container {
   margin: 20px;
   display: grid;
-  grid-template-columns: 200px 2fr 20% 1fr;
-  grid-template-rows: 5rem 2.5rem;
+
+  /*‘element-sizing(요소 크기)’ 프로퍼티 및 ‘repeat(반복)’ 함수와 ‘minmax(최대최소)’ 함수 사용하기 실습 코드*/
+
+  /* 1. 그리드에서 auto 이해하기 */
+
+  grid-template-columns: 200px 5rem 20% 1fr;
+  grid-template-rows: 5rem auto;
+
+  /* 
+  grid-template-columns: 200px 5rem 20% auto;
+  grid-template-rows: 5rem auto; */
+
+  /* 
+  height: 500px;
+  grid-template-columns: 200px 5rem 20% auto;
+  grid-template-rows: 5rem auto; */
+
+  /* grid-template-columns: 200px 5rem 20% auto;
+  grid-template-rows: 5rem 2rem; */
+
+  /*2. repeat 함수 이해, minmax 함수 이해*/
+  /* grid-template-columns: 20% 20% 20% 20%;
+  grid-template-rows: 5rem auto; */
+
+  /* grid-template-columns: repeat(4, 20%);
+  grid-template-rows: 5rem minmax(10px, 200px); */
+
+  /* height: 200px;
+  grid-template-columns: repeat(4, 20%);
+  grid-template-rows: 5rem minmax(10px, 200px); */
+
+  /* height: 200px;
+  grid-template-columns: repeat(4, 20%);
+  grid-template-rows: 5rem minmax(10px, 200px) 100px; */
 }
 
 .el1 {
