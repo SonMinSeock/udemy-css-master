@@ -1,13 +1,16 @@
 .container {
   margin: 20px;
   display: grid;
+  height: 500px;
+  grid-template-columns: repeat(4, 20%);
+  grid-template-rows: 5rem minmax(10px, auto) 100px;
 
   /*‘element-sizing(요소 크기)’ 프로퍼티 및 ‘repeat(반복)’ 함수와 ‘minmax(최대최소)’ 함수 사용하기 실습 코드*/
 
   /* 1. 그리드에서 auto 이해하기 */
 
-  grid-template-columns: 200px 5rem 20% 1fr;
-  grid-template-rows: 5rem auto;
+  /* grid-template-columns: 200px 5rem 20% 1fr;
+  grid-template-rows: 5rem auto; */
 
   /* 
   grid-template-columns: 200px 5rem 20% auto;
@@ -34,7 +37,7 @@
 
   /* height: 200px;
   grid-template-columns: repeat(4, 20%);
-  grid-template-rows: 5rem minmax(10px, 200px) 100px; */
+  grid-template-rows: 5rem minmax(10px, 200px); 100px*/
 }
 
 .el1 {
@@ -43,12 +46,18 @@
 
 .el2 {
   background: rgba(255, 0, 0, 0.5);
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 2;
+  grid-row-end: span 1;
+  z-index: 20;
 }
 
 .el3 {
   background: rgba(0, 128, 0, 0.5);
-  grid-column-start: 3;
-  grid-column-end: 5;
+  grid-column-start: 2;
+  /* grid-column-end: 5; */
+  grid-column-end: span 3;
   grid-row-start: 1;
   grid-row-end: 3;
 }
