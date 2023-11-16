@@ -8,6 +8,10 @@
   /* grid-row-gap: 10px; */
   /* grid-gap: 10px 20px; */
   grid-gap: 10px;
+  grid-template-areas:
+    "header header header header"
+    ". . main main"
+    "footer footer footer footer";
 
   /*‘element-sizing(요소 크기)’ 프로퍼티 및 ‘repeat(반복)’ 함수와 ‘minmax(최대최소)’ 함수 사용하기 실습 코드*/
 
@@ -52,10 +56,11 @@
   background: rgba(255, 0, 0, 0.5);
   /* grid-column-start: 1; */
   /* grid-column-end: -1; */
-  grid-column: 1 / -1;
+  /* grid-column: 1 / -1; */
   /* grid-row-start: row-2-start; */
   /* grid-row-end: row-2-end; */
-  grid-row: row-2-start / row-2-end;
+  /* grid-row: row-2-start / row-2-end; */
+  grid-area: main;
   z-index: 20;
 }
 
@@ -66,9 +71,11 @@
   /* grid-column-end: span 3; */
   /* grid-row-start: row-1-start; */
   /* grid-row-end: row-2-end; */
-  grid-area: row-1-start / 2 / row-2-end / span 3;
+  /* grid-area: row-1-start / 2 / row-2-end / span 3; */
+  grid-area: header;
 }
 
 .el4 {
   background: rgba(0, 4, 255, 0.5);
+  grid-area: footer;
 }
