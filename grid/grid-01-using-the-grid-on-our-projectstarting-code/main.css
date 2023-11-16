@@ -4,6 +4,10 @@
   height: 500px;
   grid-template-columns: repeat(4, 20%);
   grid-template-rows: [row-1-start] 5rem [row-2-start row-1-end] minmax(10px, auto) [row-3-start row-2-end] 100px;
+  /* grid-column-gap: 20px; */
+  /* grid-row-gap: 10px; */
+  /* grid-gap: 10px 20px; */
+  grid-gap: 10px;
 
   /*‘element-sizing(요소 크기)’ 프로퍼티 및 ‘repeat(반복)’ 함수와 ‘minmax(최대최소)’ 함수 사용하기 실습 코드*/
 
