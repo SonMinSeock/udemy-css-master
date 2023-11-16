@@ -1,0 +1,43 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  margin: 20px;
+  display: grid;
+  grid-template-columns: [col-1-start] 1fr [col-1-end col-2-start] 3fr [col-2-end];
+  grid-template-rows: 4.5rem auto 4.5rem;
+  grid-template-areas:
+    "header header"
+    "aside main"
+    "footer footer";
+  color: white;
+}
+
+header {
+  background-color: blue;
+  /* grid-column-start: col-1-start; */
+  /* grid-column-end: col-2-end; */
+  grid-area: header;
+}
+
+main {
+  background-color: red;
+  /* grid-column-start: col-2-start; */
+  /* grid-column-end: span 1; */
+  grid-area: main;
+}
+
+aside {
+  background-color: green;
+  /* grid-row-start: 2; */
+  /* grid-row-end: span 1; */
+  grid-area: aside;
+}
+
+footer {
+  background-color: purple;
+  /* grid-column-start: col-1-start; */
+  /* grid-column-end: col-2-end; */
+  grid-area: footer;
+}
