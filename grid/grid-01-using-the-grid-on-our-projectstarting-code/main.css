@@ -13,6 +13,8 @@
     ". . main main"
     "footer footer footer footer";
 
+  justify-items: stretch;
+  align-items: stretch;
   /*‘element-sizing(요소 크기)’ 프로퍼티 및 ‘repeat(반복)’ 함수와 ‘minmax(최대최소)’ 함수 사용하기 실습 코드*/
 
   /* 1. 그리드에서 auto 이해하기 */
