@@ -68,6 +68,10 @@
   /* grid-row: row-2-start / row-2-end; */
   grid-area: main;
   z-index: 20;
+  justify-self: center;
+  /* justify-self: stretch; */
+  align-self: center;
+  /* align-self: stretch; */
 }
 
 .el3 {
